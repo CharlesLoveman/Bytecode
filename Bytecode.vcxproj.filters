@@ -24,12 +24,18 @@
     <ClCompile Include="CalcVM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StringVM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CalcVM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringVM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="Bytecode.cpp" />
     <ClCompile Include="CalcVM.cpp" />
+    <ClCompile Include="StringVM.cpp" />
     <ClCompile Include="VM.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CalcVM.h" />
+    <ClInclude Include="StringVM.h" />
     <ClInclude Include="VM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

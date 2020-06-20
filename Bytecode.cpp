@@ -4,22 +4,23 @@
 #include <iostream>
 #include "VM.h"
 #include "CalcVM.h"
+#include "StringVM.h"
 
 int main()
 {
-    VM* myVM = new CalcVM();
+    VM* myVM = new StringVM();
     
     char* bytecode = new char[5];
 
-    bytecode[0] = CalcInstruction::CALC_INP;
+    bytecode[0] = StringInstruction::STRING_INP;
 
-    bytecode[1] = CalcInstruction::CALC_INP;
+    bytecode[1] = StringInstruction::STRING_INP;
 
-    bytecode[2] = CalcInstruction::CALC_ADD;
+    bytecode[2] = StringInstruction::STRING_CAT;
 
-    bytecode[3] = CalcInstruction::CALC_OUT;
+    bytecode[3] = StringInstruction::STRING_OUT;
 
-    bytecode[4] = CalcInstruction::CALC_HALT;
+    bytecode[4] = StringInstruction::STRING_HALT;
 
     myVM->interpret(bytecode, 5);
 
